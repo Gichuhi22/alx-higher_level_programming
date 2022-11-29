@@ -5,9 +5,16 @@ num = str(number)
 length = len(num)
 num_int = int(num[length-1])
 
+
+if number < 0 and num_int != 0:
+    num_int = 0 - num_int
+
+
 if num_int > 5:
-    print("Last digit of {} is {} and is greater than 5".format(number,num[length - 1]))
+    print("""Last digit of {} is {} and
+            is greater than 5""".format(number, num_int))
 elif num_int == 0:
-    print("Last digit of {} is {} and is 0".format(number,num[length - 1]))
+    print("Last digit of {} is {} and is 0".format(number, num_int))
 elif num_int != 0 and num_int < 6:
-    print("Last digit of {} is {} and is less than 6 and not 0".format(number,num[length - 1]))
+    print(f"""Last digit of {number} is {num_int}
+    and is less than 6 and not 0""")
