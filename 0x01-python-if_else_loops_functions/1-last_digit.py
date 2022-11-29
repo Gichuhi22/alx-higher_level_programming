@@ -11,10 +11,8 @@ if number < 0 and num_int != 0:
 
 
 if num_int > 5:
-    print("""Last digit of {} is {} and
-            is greater than 5""".format(number, num_int))
+    print(f"Last digit of {number} is {num_int} and is greater than 5")
 elif num_int == 0:
     print("Last digit of {} is {} and is 0".format(number, num_int))
 elif num_int != 0 and num_int < 6:
-    print(f"""Last digit of {number} is {num_int}
-    and is less than 6 and not 0""")
+    print(f"Last digit of {number} is {num_int} and is less than 6 and not 0")
