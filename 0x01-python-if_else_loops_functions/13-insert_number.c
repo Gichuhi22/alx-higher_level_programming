@@ -28,18 +28,17 @@ listint_t *insert_node(listint_t **head, int number)
 			*head = new;
 			break;
 		}
-		else if ((temp->n < new->n) && (new->n < temp->next->n))
+		if ((temp->n < new->n) && (new->n < temp->next->n))
 		{
 			new->next = temp->next;
 			temp->next = new;
 			break;
 		}
-		else if ((temp->next == NULL) && (temp->n < number))
+		else if ((temp->next->next == NULL) && (temp->next->n < number))
 		{
-			 temp->next = new;
+			 temp->next->next = new;
 			 new->next = NULL;
 		}
-		
 		temp = temp->next;
 	}
 	return (new);
