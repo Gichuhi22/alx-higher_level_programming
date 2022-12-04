@@ -2,4 +2,5 @@
 def no_c(my_string):
     if my_string:
         new_string = my_string.lower()
-        return new_string.replace('c', "")
+        newstring = new_string.translate({ord('c'): None})
+        return newstring
