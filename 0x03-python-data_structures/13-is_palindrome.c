@@ -10,7 +10,7 @@ int is_palindrome(listint_t **head)
 {
 	int num_nodes = 0, i = 0, j, x;
 	listint_t *temp, *curr;
-	int *num_array;
+	int num_array[32];
 
 	temp = curr = *head;
 	if (*head == NULL)
@@ -20,12 +20,6 @@ int is_palindrome(listint_t **head)
 	{
 		temp = temp->next;
 		num_nodes++;
-	}
-	num_array = malloc(sizeof(int) * (num_nodes + 1));
-	if (!num_array)
-	{
-		free(num_array);
-		exit(1);
 	}
 
 	while (curr != NULL)
@@ -46,6 +40,5 @@ int is_palindrome(listint_t **head)
 			x = 1;
 		}
 	}
-	free(num_array);
 	return (x);
 }
