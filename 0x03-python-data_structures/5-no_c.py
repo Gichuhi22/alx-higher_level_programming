@@ -6,4 +6,5 @@ def no_c(my_string):
     for item in my_string:
         if item != "c":
             new_string += item
+    print(my_string)
     return new_string
