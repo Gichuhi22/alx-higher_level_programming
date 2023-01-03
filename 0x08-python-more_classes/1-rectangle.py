@@ -10,6 +10,7 @@ class Rectangle:
         ValueError if width or height is less than 0
     """
     def __init__(self, width=0, height=0):
+        """ initial instantiation of width and height """
         self.__width = width
         self.__height = height
 
@@ -20,6 +21,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
+        """sets the width"""
         if not isinstance(value, int):
             raise TypeError("Width must be an integer")
         if value < 0:
@@ -33,6 +35,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """ sets the height """
         if not isinstance(value, int):
             raise TypeError("Height must be an integer")
         if value < 0:
