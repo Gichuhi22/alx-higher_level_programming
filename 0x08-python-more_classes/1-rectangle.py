@@ -10,11 +10,7 @@ class Rectangle:
         ValueError if width or height is less than 0
     """
     def __init__(self, width=0, height=0):
-        """ initialize a new Rectangle
-        Args:
-            width (int): the width of the new rectangle
-            height (int): the height of the new rectangle
-        """        
+        """ initialize a new Rectangle"""
         self.width = width
         self.height = height
 
