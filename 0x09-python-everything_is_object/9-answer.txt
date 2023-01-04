@@ -1,1 +1,1 @@
-True or False depending on implementation
+True
