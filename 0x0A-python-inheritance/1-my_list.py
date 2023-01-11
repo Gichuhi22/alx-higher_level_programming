@@ -3,6 +3,7 @@
     defines a class that inherits from a list
 """
 
+
 class MyList(list):
     """defines a class MyList that inherits from list.
     """
