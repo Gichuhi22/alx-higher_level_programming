@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 """ a nqueens algorithm module
 """
@@ -13,8 +14,7 @@ def nqueens(n):
             return
         for col in range(n):
             d1, d2 = row - col, row + col
-            if col not in result and d1 not in diagonals1
-            and d2 not in diagonals2:
+            if col not in result and d1 not in diagonals1 and d2 not in diagonals2:
                 solve(row + 1, diagonals1 |
                       {d1}, diagonals2 | {d2}, result + [col], solutions)
 
