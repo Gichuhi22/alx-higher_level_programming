@@ -119,6 +119,7 @@ class Rectangle(Base):
             Prints rectangle instance on stdout with character "#"
         """
         for item in range(self.__height):
+            print(" " * self.__x, end="")
             print("#" * self.__width)
 
     def __str__(self):
