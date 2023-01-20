@@ -125,5 +125,6 @@ class Rectangle(Base):
         """
             returns string value representantion of rectangle instance
         """
-        return (f"""[Rectangle] ({self.id}) {self.__x}/{self.__y}"""
-                f"""- {self.__width}/{self.__height}""")
+        result = "[Rectangle] ({}) {}/{} - {}/{}"\
+            .format(self.id, self.x, self.y, self.__width, self.__height)
+        return result
