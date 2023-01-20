@@ -120,3 +120,10 @@ class Rectangle(Base):
         """
         for item in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """
+            returns string value representantion of rectangle instance
+        """
+        return (f"""[Rectangle] ({self.id}) {self.__x}/{self.__y}"""
+                f"""- {self.__width}/{self.__height}""")
